@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    padding-bottom: 200px;
+    
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+canvas {
+    background-color: #000;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100vw; /* 100% of the viewport width */
+    max-width: 1000px;
+    height: 1000px; /* Fixed height of 1000 pixels */
+}
+h1 {
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+
+.topbarcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+#fade-section-home {
+    display: grid;
+    place-items: center;
+    align-content: center;
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 3s ease-out, transform 1s ease-out;
+    padding: 50px;
+    background: #000;
+    margin: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fade-section-home.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
