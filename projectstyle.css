@@ -184,3 +184,21 @@ body {
     }
 }
 
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black; /* Default button color */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.button-link:hover {
+    background-color: grey; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
