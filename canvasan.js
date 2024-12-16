@@ -259,6 +259,7 @@ for (var i = 0; i < grid.length; i++) {
 
 
 let test = 1
+var fps, fpsInterval, startTime, now, then, elapsed;
 function animate(){
     window.requestAnimationFrame(animate); 
     ctx.fillStyle = "black";

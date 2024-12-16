@@ -94,7 +94,7 @@ body {
     align-items: center; /* Center vertically */
     min-height: 100vh; /* Ensure the body takes the full viewport height */
     background-color: black;
-     /* Optional: Add a background color for contrast */
+     
 }
 
 .gridpad{
