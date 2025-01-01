@@ -279,7 +279,7 @@ function animate(){
 
         if (bullets[i].enabled)
         {
-            let topblock = deriveindfromcord(bullets[i].x + 5, bullets[i].y);
+            let topblock = deriveindfromcord(bullets[i].x + 1, bullets[i].y);
             // console.log(topblock);
             if (gridbag.has(topblock)) {
                 if (gridbag.get(topblock).health > 0) {
@@ -292,7 +292,7 @@ function animate(){
 
             }
 
-            topblock = deriveindfromcord(bullets[i].x + 5, bullets[i].y + 10);
+            topblock = deriveindfromcord(bullets[i].x + 9, bullets[i].y);
             // console.log(topblock);
             if (gridbag.has(topblock)) {
                 if (gridbag.get(topblock).health > 0) {
@@ -305,7 +305,32 @@ function animate(){
 
             }
 
-            topblock = deriveindfromcord(bullets[i].x, bullets[i].y + 5);
+            topblock = deriveindfromcord(bullets[i].x + 1, bullets[i].y + 10);
+            // console.log(topblock);
+            if (gridbag.has(topblock)) {
+                if (gridbag.get(topblock).health > 0) {
+                    gridbag.get(topblock).dmg()
+                    //bullets[i].dir = -bullets[i].dir
+                    bullets[i].ymod = -bullets[i].ymod
+                    bullets[i].update()
+                }
+
+
+            }
+            topblock = deriveindfromcord(bullets[i].x + 9, bullets[i].y + 10);
+            // console.log(topblock);
+            if (gridbag.has(topblock)) {
+                if (gridbag.get(topblock).health > 0) {
+                    gridbag.get(topblock).dmg()
+                    //bullets[i].dir = -bullets[i].dir
+                    bullets[i].ymod = -bullets[i].ymod
+                    bullets[i].update()
+                }
+
+
+            }
+
+            topblock = deriveindfromcord(bullets[i].x, bullets[i].y + 1);
             // console.log(topblock);
             if (gridbag.has(topblock)) {
                 if (gridbag.get(topblock).health > 0) {
@@ -317,7 +342,34 @@ function animate(){
 
 
             }
-            topblock = deriveindfromcord(bullets[i].x + 10, bullets[i].y + 5);
+            topblock = deriveindfromcord(bullets[i].x, bullets[i].y + 9);
+            // console.log(topblock);
+            if (gridbag.has(topblock)) {
+                if (gridbag.get(topblock).health > 0) {
+                    gridbag.get(topblock).dmg()
+                    bullets[i].dir = -bullets[i].dir
+                    // bullets[i].ymod = -bullets[i].ymod
+                    bullets[i].update()
+                }
+
+
+            }
+
+
+            topblock = deriveindfromcord(bullets[i].x + 10, bullets[i].y + 1);
+            // console.log(topblock);
+            if (gridbag.has(topblock)) {
+                if (gridbag.get(topblock).health > 0) {
+                    gridbag.get(topblock).dmg()
+                    bullets[i].dir = -bullets[i].dir
+                    // bullets[i].ymod = -bullets[i].ymod
+                    bullets[i].update()
+                }
+
+
+            }
+
+            topblock = deriveindfromcord(bullets[i].x + 10, bullets[i].y + 9);
             // console.log(topblock);
             if (gridbag.has(topblock)) {
                 if (gridbag.get(topblock).health > 0) {
