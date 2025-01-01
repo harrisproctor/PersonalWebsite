@@ -258,10 +258,18 @@ for (var i = 0; i < grid.length; i++) {
 
 
 
-let test = 1
-var fps, fpsInterval, startTime, now, then, elapsed;
+let fps = 60;
+let fpsInterval = 1000 / fps;
+let then = Date.now();
 function animate(){
     window.requestAnimationFrame(animate); 
+
+    let now = Date.now();
+    let elapsed = now - then;
+
+    if (elapsed > fpsInterval) {
+        then = now - (elapsed % fpsInterval);
+
     ctx.fillStyle = "black";
     ctx.fillRect(0,0,3000,3000);
 
@@ -452,6 +460,7 @@ function animate(){
     
 
 
+}
 }
 animate();
 
