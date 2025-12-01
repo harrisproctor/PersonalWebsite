@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>so-101 Robotic Arm - Harris Proctor</title>
+    <link rel="icon" type="image/png" href="assets/templogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail {
+            max-width: 800px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+        }
+
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Blog Styles */
+        .blog-container {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .blog-post {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .post-header {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .post-header h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .post-date {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            font-family: monospace;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 450px;
+            background-color: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .video-placeholder span {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topbarcontainer">
+            <div class="logo">
+                <a href="index.html">Harris Proctor</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <a class="socialimg" href="https://github.com/harrisproctor" target="_blank"
+                            rel="noopener noreferrer">
+                            <img alt="github" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
+                                style="color:transparent" src="assets/github100.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socialimg" href="https://www.linkedin.com/in/harris-proctor/ " target="_blank"
+                            rel="noopener noreferrer">
+                            <img alt="github" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
+                                style="color:transparent" src="assets/linkedin100.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <a href="projects.html" class="back-link">← Back to Projects</a>
+            <h1>so-101 Robotic Arm</h1>
+            <p style="color: rgba(255,255,255,0.6);">A chronological log of development and updates.</p>
+        </div>
+
+        <div class="blog-container">
+            <!-- Post 1 (Newest) -->
+            <div class="blog-post">
+                <div class="post-header">
+                    <h2>Latest Progress Update</h2>
+                </div>
+                <div class="post-content">
+                    <div class="video-placeholder"
+                        style="padding-bottom: 56.25%; height: 0; position: relative; background: none; border: none;">
+                        <iframe src="https://www.youtube.com/embed/1qWHgCUOVYo" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"></iframe>
+                    </div>
+                    <p>
+                        I am now using phone teleoperation to collect training data for placing various objects into a
+                        cup. I am also working on a program to collect training data from the robot's autonomous
+                        operation, aiming to train a model to perform the task more reliably using only autonomously
+                        collected data.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 2 (Middle) -->
+            <div class="blog-post">
+                <div class="post-header">
+                    <h2>Music & Coding: C Major Scale</h2>
+                </div>
+                <div class="post-content">
+                    <div class="video-placeholder"
+                        style="padding-bottom: 56.25%; height: 0; position: relative; background: none; border: none;">
+                        <iframe src="https://www.youtube.com/embed/XrNKd8NgKIQ" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"></iframe>
+                    </div>
+                    <p>
+                        I built a small program for my Music and Coding class that allows the robot to play any melody
+                        in the C major scale. The video above shows the robot playing Twinkle Twinkle Little Star. This
+                        was a simple project to familiarize myself with the basics of robot
+                        control for my SO-101.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Post 3 (Oldest) -->
+            <div class="blog-post">
+                <div class="post-header">
+                    <h2>Building & Lerobot Setup</h2>
+                </div>
+                <div class="post-content">
+                    <div class="video-placeholder" style="height: auto; background: none; border: none;">
+                        <img src="assets/robot_posed.jpg" alt="Robot Posed" style="width: 100%; border-radius: 8px;">
+                    </div>
+                    <p>
+                        I built this SO-101 robotic arm using servos and 3D-printed parts and am currently setting it up
+                        using LeRobot. I plan to research how to collect meaningful data using self-supervised play and
+                        data collection. I will then use this data to train the robot to perform tasks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
