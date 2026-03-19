@@ -220,6 +220,21 @@ p {
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: auto;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+.button-group .button-link {
+    margin-top: 0;
+    flex: 1;
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
 }
 
 .button-link:hover {
