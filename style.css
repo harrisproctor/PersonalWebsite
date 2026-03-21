@@ -162,6 +162,16 @@ p {
     width: 100%;
 }
 
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -194,6 +204,10 @@ p {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
+}
+
+.top-crop {
+    object-position: 0% 17%;
 }
 
 .grid-item h3 {
