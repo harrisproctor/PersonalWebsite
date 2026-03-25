@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloha Mini robot - Harris Proctor</title>
+    <link rel="icon" type="image/png" href="assets/templogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail {
+            max-width: 800px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+        }
+
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Blog Styles */
+        .blog-container {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .blog-post {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .post-header {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .post-header h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .post-date {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            font-family: monospace;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 450px;
+            background-color: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .video-placeholder span {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.2rem;
+        }
+
+        .post-content a {
+            color: var(--accent-color);
+            text-decoration: none;
+            word-break: break-all;
+            /* Fallback for very long text */
+        }
+
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topbarcontainer">
+            <div class="logo">
+                <a href="index.html">Harris Proctor</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <a class="socialimg" href="https://github.com/harrisproctor" target="_blank"
+                            rel="noopener noreferrer">
+                            <img alt="github" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
+                                style="color:transparent" src="assets/github100.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socialimg" href="https://www.linkedin.com/in/harris-proctor/ " target="_blank"
+                            rel="noopener noreferrer">
+                            <img alt="github" loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
+                                style="color:transparent" src="assets/linkedin100.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <a href="projects.html" class="back-link">← Back to Projects</a>
+            <h1>Aloha Mini robot</h1>
+            <p style="color: rgba(255,255,255,0.6);">A chronological log of development and updates for the Aloha Mini
+                robot project.</p>
+        </div>
+
+        <div class="blog-container">
+            <!-- Post 1 (Newest) -->
+            <div class="blog-post">
+                <div class="post-header">
+                    <h2>Initial Testing & Calibration</h2>
+                </div>
+                <div class="post-content">
+                    <div class="video-placeholder" style="height: auto; background: none; border: none;">
+                        <img src="assets/Alohaimg.jpg" alt="Aloha Mini Robot Testing"
+                            style="width: 100%; border-radius: 8px;">
+                    </div>
+                    <p>
+                        I built the open source design for the <a href="https://github.com/liyiteng/AlohaMini"
+                            target="_blank">Aloha Mini robot</a> to continue my experiments in embodied
+                        AI at a larger scale than my single SO-101 robot. I had to make a few modifications to the
+                        design to allow me to print every component on my
+                        3D printer. Here are the modified base files that can fit on a 256mm³ print
+                        bed (<a
+                            href="https://cad.onshape.com/documents/a3e84b54b96766d8047dad6a/w/34c7f811a7cfdedad0901d42/e/6f2c98a8c51fef879c90ec56"
+                            target="_blank">Part 1</a> and <a
+                            href="https://cad.onshape.com/documents/a0c5692fbf69afee70d1c614/w/574f0226334f2a3a129a809f/e/5745c8441d5044c05abb6cdd"
+                            target="_blank">Part 2</a>).
+                        I am currently working on creating a VR teleop pipeline
+                        as my current dual leader arm and keyboard teleop method is rather cumbersome.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
